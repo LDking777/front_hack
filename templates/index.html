@@ -8,7 +8,7 @@
       href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Raleway:wght@300;400;500;600&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="/static/styles.css">
   </head>
   <!-- NAV -->
   <nav id="navbar">
@@ -389,7 +389,7 @@
  
         <div class="chat-input-bar">
           <textarea id="chat-input" placeholder="Escribe tu pregunta sobre Caldas..." rows="1"></textarea>
-          <button id="chat-send" onclick="sendMessage()">➤</button>
+          <button type="button" id="chat-send">➤</button>
         </div>
       </div>
     </div>
@@ -478,6 +478,6 @@
  
   <!-- WhatsApp Float -->
   <a href="#" class="whatsapp-float" title="Contáctanos por WhatsApp">💬</a>
-    <script src="scripts.js"></script>
+    <script src="{{ url_for('static', filename='scripts.js') }}"></script>
   </body>
 </html>
